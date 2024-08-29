@@ -6,35 +6,61 @@ import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
 
 const TAGS = {
-  NEXT: {
-    name: "Next.js",
+  TYPESCRIPT: {
+    name: "Typescript",
     class: "bg-black text-white",
     icon: NextJS,
   },
-  TAILWIND: {
-    name: "Tailwind CSS",
+  React: {
+    name: "React",
+    class: "bg-black text-white",
+    icon: NextJS,
+  },
+  CHAKRA: {
+    name: "Chakra UI",
     class: "bg-[#003159] text-white",
     icon: Tailwind,
   },
+  REDUX: {
+    name: "Redux toolkit",
+    class: "bg-black text-white",
+    icon: NextJS,
+  },
+  NEST: {
+    name: "Nest js",
+    class: "bg-black text-white",
+    icon: NextJS,
+  },
+  MONGODB: {
+    name: "MONGODB",
+    class: "bg-black text-white",
+    icon: NextJS,
+  }, 
+  SOCKET: {
+    name: "Socket io",
+    class: "bg-black text-white",
+    icon: NextJS,
+  }
 }
 const PROJECTS = [
   {
-    title: "SVGL - A beautiful library with SVG logos",
+    title: "What's app Web Clone",
     description:
-      "Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://svgl.vercel.app/",
-    github: "https://github.com/pheralb/svgl",
+      "App de mensajería en tiempo real inspirada en What's app web.",
+    link: "https://wsp-web-app-production.up.railway.app/session/signin",
+    github: "https://github.com/SebastianChaca/wsp-web-app",
     image: "/projects/svgl.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.TYPESCRIPT, TAGS.React, TAGS.REDUX, TAGS.CHAKRA],
   },
   {
-    title: "AdventJS - Retos de programación con JavaScript y TypeScript",
-    description:
-      "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://adventjs.dev",
-    image: "/projects/adventjs.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    title: "What's app Web Clone API",
+    description: "API REST de whats app web clone.",
+    link: "https://wsp-web-app-production.up.railway.app/session/signin",
+    github: "https://github.com/SebastianChaca/wsp-web-api",
+    image: "/projects/svgl.webp",
+    tags: [TAGS.NEST, TAGS.MONGODB, TAGS.SOCKET,],
   },
+ 
 ]
 ---
 
