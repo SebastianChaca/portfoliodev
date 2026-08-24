@@ -9,6 +9,8 @@ import socket from "./icons/Socker.astro";
 import Nest from "./icons/Nestjs.astro";
 import Mongo from "./icons/Mongo.astro";
 import Chakra from "./icons/Chakra.astro";
+import Vue from "./icons/Vue.astro";
+import Electron from "./icons/Electron.astro";
 const TAGS = {
   TYPESCRIPT: {
     name: "Typescript",
@@ -45,8 +47,26 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: socket,
   },
+  VUE: {
+    name: "Vue",
+    class: "bg-[#003159] text-white",
+    icon: Vue,
+  },
+  ELECTRON: {
+    name: "Electron",
+    class: "bg-[#003159] text-white",
+    icon: Electron,
+  },
 };
 const PROJECTS = [
+  {
+    title: "GitLab Bar",
+    description:
+      "App de barra de menú para macOS que monitorea merge requests de GitLab y avisa cuáles requieren atención, sin tener que dejar pestañas del navegador abiertas.",
+    github: "https://github.com/SebastianChaca/gitlab-bar",
+    image: "/projects/gitlabbar.webp",
+    tags: [TAGS.TYPESCRIPT, TAGS.ELECTRON, TAGS.VUE],
+  },
   {
     title: "What's app Web Clone",
     description:
